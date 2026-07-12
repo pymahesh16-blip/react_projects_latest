@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Home from './Home'
 import Login from './Login'
 import Navbar from './Navbar'
@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <div>
